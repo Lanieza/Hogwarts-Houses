@@ -1,0 +1,27 @@
+body{
+    background-image: url("bg_image.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 40%
+}
+
+.hp_style{
+    text-align: left;
+    font-family: harry;
+    font-size:80px;
+    margin-top: -50px;
+    margin-left: 30px;
+    
+
+}
+
+@font-face{
+    font-family: harry;
+    src: url(harry_potter.ttf)
+}
+
+.linear-text-gradient {
+    background: linear-gradient(to top, #FFC42B, #B26B00 );
+    background-clip: text;
+    color: transparent; 
+}
