@@ -20,8 +20,45 @@ body{
     src: url(harry_potter.ttf)
 }
 
-.linear-text-gradient {
-    background: linear-gradient(to top, #FFC42B, #B26B00 );
-    background-clip: text;
-    color: transparent; 
+
+.hpstyle {
+    font-size: 80px;
+    color: #b07c2d;
+    text-align: left;
+}
+
+
+.hpstyle:hover {
+    font-size: 80px;
+    color: #B26B00;
+    text-align: left;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 30s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+    text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #222244, 0 0 40px #531e61, 0 0 50px #363f9b, 0 0 60px #6bb7e3, 0 0 70px #165b84;
+}
+to {
+    text-shadow: 50 200 10px #fff, 0 0 30px #296c96, 0 0 40px #FFC42B, 0 0 50px #FFC42B, 0 0 60px #FFC42B, 0 0 70px #FFC42B, 0 0 80px #FFC42B;
+    }
+}
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+padding: 2px 16px;
 }
